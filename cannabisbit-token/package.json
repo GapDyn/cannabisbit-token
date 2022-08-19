@@ -1,0 +1,31 @@
+{
+  "name": "CannabisBit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "npx hardhat compile",
+    "flatten": "npx hardhat flatten > flatten/CannabisBit.sol",
+    "lint": "prettier --list-different 'contracts/**/*.sol'",
+    "publish": "npx hardhat run scripts/deploy.js",
+    "flat": "npx hardhat flatten .\\contracts\\CannabisBit.sol > .\\flatten\\CannabisBit.sol"
+  },
+  "author": "Mohammad Mohsin Laeeque",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.8",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
+    "hardhat": "^2.7.0",
+    "prettier": "^2.6.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.19"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.4.0",
+    "dotenv": "^10.0.0",
+    "solhint-plugin-prettier": "0.0.5"
+  }
+}
